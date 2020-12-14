@@ -127,7 +127,7 @@ export function highlight(code, language) {
     .trim()
     .split("\n")
     .map(function (line) {
-      return `<code className="line">${line}</code>`;
+      return `<code class="line">${line}</code>`;
     })
     .join("\n");
   //codeBlock.innerHTML = newCode;
