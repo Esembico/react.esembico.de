@@ -1,4 +1,4 @@
-languages["python"] = function (code) {
+export default function python(code, tokenize) {
   const specialCharacters = ["(", ")", "+", "=", "-", ",", "."];
   const keywords = [
     "and",

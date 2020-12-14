@@ -99,56 +99,39 @@ function tokenize(
   return tokens;
 }
 
-function highlight() {
-  const codeBlocks = document.querySelectorAll("pre");
+export function highlight(code, language) {
 
-  for (let codeBlock of codeBlocks) {
-    const code = codeBlock.innerHTML;
-    let language = null;
-    codeBlock.classList.forEach((clazz) => {
-      if (clazz in languages) {
-        language = clazz;
-      }
-    });
+  const { tokens, keywords } = language(code, tokenize);
 
-    if (!language) {
+  let newCode = "";
+
+  for (let i = 0; i < tokens.length; i++) {
+    const token = tokens[i];
+    if (token.type === "text" && keywords.includes(token.value.toLowerCase())) {
+      newCode += `<span class="keyword">${token.value}</span>`;
       continue;
     }
-
-    const { tokens, keywords } = languages[language](code);
-
-    let newCode = "";
-
-    for (let i = 0; i < tokens.length; i++) {
-      const token = tokens[i];
-      if (
-        token.type === "text" &&
-        keywords.includes(token.value.toLowerCase())
-      ) {
-        newCode += `<span class="keyword">${token.value}</span>`;
-        continue;
-      }
-      if (token.type === "number") {
-        newCode += `<span class="number">${token.value}</span>`;
-        continue;
-      }
-      if (token.type === "comment") {
-        newCode += `<span class="comment">${token.value}</span>`;
-        continue;
-      }
-      if (token.type === "string") {
-        newCode += `<span class="string">${token.value}</span>`;
-        continue;
-      }
-      newCode += token.value;
+    if (token.type === "number") {
+      newCode += `<span class="number">${token.value}</span>`;
+      continue;
     }
-    newCode = newCode
-      .trim()
-      .split("\n")
-      .map(function (line) {
-        return `<code class="line">${line}</code>`;
-      })
-      .join("\n");
-    codeBlock.innerHTML = newCode;
+    if (token.type === "comment") {
+      newCode += `<span class="comment">${token.value}</span>`;
+      continue;
+    }
+    if (token.type === "string") {
+      newCode += `<span class="string">${token.value}</span>`;
+      continue;
+    }
+    newCode += token.value;
   }
+  newCode = newCode
+    .trim()
+    .split("\n")
+    .map(function (line) {
+      return `<code className="line">${line}</code>`;
+    })
+    .join("\n");
+  //codeBlock.innerHTML = newCode;
+  return newCode;
 }

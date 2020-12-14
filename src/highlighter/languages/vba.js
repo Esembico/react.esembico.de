@@ -1,4 +1,4 @@
-languages["vba"] = function (code) {
+export default function vba(code, tokenize) {
   const specialCharacters = ["(", ")", "+", "=", "-", ",", "."];
   const keywords = [
     "#if",
@@ -133,4 +133,4 @@ languages["vba"] = function (code) {
   });
 
   return { tokens, keywords };
-};
+}
