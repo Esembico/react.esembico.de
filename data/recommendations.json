@@ -1,0 +1,398 @@
+[
+  {
+    "type": "misc",
+    "url": "https://www.youtube.com/watch?v=PbtukN4o1Hw&feature=youtu.be",
+    "image": {
+      "url": "/static/images/rec/1 avatar.png",
+      "width": 170,
+      "height": 90,
+      "alt": "avatar"
+    },
+    "title": "Create your own avatar with GIMP",
+    "description": "Click/Tap the image for more details"
+  },
+  {
+    "type": "misc",
+    "url": "https://www.sololearn.com/",
+    "image": {
+      "url": "/static/images/rec/SoloLearn.jpg",
+      "width": 143,
+      "height": 88,
+      "alt": "SoloLearn"
+    },
+    "title": "Online and mobile learning platform",
+    "description": "Learn Playing. Play learning"
+  },
+  {
+    "type": "misc",
+    "url": "https://www.kaggle.com/",
+    "image": {
+      "url": "/static/images/rec/kaggle.jpeg",
+      "width": 143,
+      "height": 88,
+      "alt": "kaggle"
+    },
+    "title": "Community of data scientists and machine learning practitioners",
+    "description": "Your Home for Data Science"
+  },
+  {
+    "type": "misc",
+    "url": "https://repl.it/",
+    "image": {
+      "url": "/static/images/rec/repl.png",
+      "width": 143,
+      "height": 88,
+      "alt": "repl.it"
+    },
+    "title": "Online IDE",
+    "description": "Show me what you've got!"
+  },
+  {
+    "type": "misc",
+    "url": "/recommendations/recDsvsBA",
+    "internalUrl": true,
+    "image": {
+      "url": "/static/images/rec/DSvsBA.jpg",
+      "width": 220,
+      "height": 88,
+      "alt": "DSvsBA"
+    },
+    "title": "Data Scientist vs Business Analyst",
+    "description": "Here's the Difference"
+  },
+  {
+    "type": "misc",
+    "url": "http://pythontutor.com/",
+    "image": {
+      "url": "/static/images/rec/pythontutor.PNG",
+      "width": 220,
+      "height": 88,
+      "alt": "pythontutor"
+    },
+    "title": "Visualize code execution",
+    "description": "See what happens in each line of your code"
+  },
+  {
+    "type": "misc",
+    "url": "https://www.freeformatter.com/",
+    "image": {
+      "url": "/static/images/rec/freeformatter.PNG",
+      "width": 180,
+      "height": 180,
+      "alt": "freeformatter"
+    },
+    "title": "Free Online Tools for Developers",
+    "description": "Formatters | Validators | Converters\nTest your xml structure agains xsd or transform your file with xslt etc."
+  },
+  {
+    "type": "misc",
+    "url": "https://www.udemy.com/",
+    "image": {
+      "url": "/static/images/rec/udemy.jpg",
+      "width": 180,
+      "height": 180,
+      "alt": "udemy"
+    },
+    "title": "Online Education Platform",
+    "description": "Learn what you want and improve your skills."
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0986263/",
+    "image": {
+      "url": "/static/images/rec/surrogates.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "surrogates"
+    },
+    "title": "SURROGATES",
+    "ageRating": "12",
+    "releaseYear": "2009"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0212720/",
+    "image": {
+      "url": "/static/images/rec/ai.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "ai"
+    },
+    "title": "AI",
+    "ageRating": "12",
+    "releaseYear": "2001"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt2317225/",
+    "image": {
+      "url": "/static/images/rec/the_machine.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "the machine"
+    },
+    "title": "The Machine",
+    "ageRating": "16",
+    "releaseYear": "2013"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1386703/",
+    "image": {
+      "url": "/static/images/rec/total_recall.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "total recall"
+    },
+    "title": "Total Recall",
+    "ageRating": "12",
+    "releaseYear": "2012"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1446714/",
+    "image": {
+      "url": "/static/images/rec/prometheus.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "prometheus"
+    },
+    "title": "Prometheus",
+    "ageRating": "16",
+    "releaseYear": "2012"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1990314/",
+    "image": {
+      "url": "/static/images/rec/robot_frank.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "robot frank"
+    },
+    "title": "Robot & Frank",
+    "ageRating": "0",
+    "releaseYear": "2012"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1535108/",
+    "image": {
+      "url": "/static/images/rec/elysium.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "elysium"
+    },
+    "title": "Elysium",
+    "ageRating": "16",
+    "releaseYear": "2013"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1483013/",
+    "image": {
+      "url": "/static/images/rec/oblivion.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "oblivion"
+    },
+    "title": "Oblivion",
+    "ageRating": "12",
+    "releaseYear": "2013"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1971325/",
+    "image": {
+      "url": "/static/images/rec/automata.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "automata"
+    },
+    "title": "Automata",
+    "ageRating": "12",
+    "releaseYear": "2014"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1823672/",
+    "image": {
+      "url": "/static/images/rec/chappie.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "chappie"
+    },
+    "title": "Chappie",
+    "ageRating": "12",
+    "releaseYear": "2015"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0119116/",
+    "image": {
+      "url": "/static/images/rec/fifth_element.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "fifth element"
+    },
+    "title": "The Fifth Element",
+    "ageRating": "12",
+    "releaseYear": "1997"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0470752/",
+    "image": {
+      "url": "/static/images/rec/ex_machina.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "ex machina"
+    },
+    "title": "Ex Machina",
+    "ageRating": "12",
+    "releaseYear": "2014"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt6499752/",
+    "image": {
+      "url": "/static/images/rec/upgrade.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "upgrade"
+    },
+    "title": "Upgrade",
+    "ageRating": "16",
+    "releaseYear": "2018"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1856101/",
+    "image": {
+      "url": "/static/images/rec/blade_runner_2049.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "blade runner 2049"
+    },
+    "title": "Blade Runner 2049",
+    "ageRating": "12",
+    "releaseYear": "2017"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt2239822/",
+    "image": {
+      "url": "/static/images/rec/valerian.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "valerian"
+    },
+    "title": "Valerian",
+    "ageRating": "12",
+    "releaseYear": "2017"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt2209764/",
+    "image": {
+      "url": "/static/images/rec/transcendence.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "transcendence"
+    },
+    "title": "Transendence",
+    "ageRating": "12",
+    "releaseYear": "2014"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1798709/",
+    "image": {
+      "url": "/static/images/rec/her.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "her"
+    },
+    "title": "Her",
+    "ageRating": "12",
+    "releaseYear": "2013"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0343818/",
+    "image": {
+      "url": "/static/images/rec/irobot.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "irobot"
+    },
+    "title": "I, Robot",
+    "ageRating": "12",
+    "releaseYear": "2004"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1104001/",
+    "image": {
+      "url": "/static/images/rec/tron.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "tron"
+    },
+    "title": "Tron",
+    "ageRating": "12",
+    "releaseYear": "2004"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1731141/",
+    "image": {
+      "url": "/static/images/rec/enders_game.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "enders game"
+    },
+    "title": "Ender's game",
+    "ageRating": "12",
+    "releaseYear": "2013"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0134847/",
+    "image": {
+      "url": "/static/images/rec/pitch_black.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "pitchblack"
+    },
+    "title": "Pitch Black",
+    "ageRating": "16",
+    "releaseYear": "2000"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt0296572/",
+    "image": {
+      "url": "/static/images/rec/chronicles_of_riddick.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "chronicles of riddick"
+    },
+    "title": "The Chronicles of Riddick",
+    "ageRating": "16",
+    "releaseYear": "2004"
+  },
+  {
+    "type": "movie",
+    "url": "https://www.imdb.com/title/tt1411250/",
+    "image": {
+      "url": "/static/images/rec/riddick.jpg",
+      "width": 90,
+      "height": 135,
+      "alt": "riddick"
+    },
+    "title": "Riddick",
+    "ageRating": "16",
+    "releaseYear": "2013"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Sebastian",
+    "artistName": "Sebi",
+    "titles": "Management Assistant in IT Systems | Business Analyst | Project Manager | Tester | Developer",
+    "bio": "Would be very happy to be supported by robot in old age.\nOn the way there I try to list interesting findings as prototypes.",
+    "image": "/static/images/team/esbi.png"
+  },
+  {
+    "name": "Marc",
+    "artistName": "Embi",
+    "titles": "System Engineer | Professional coder/developer",
+    "bio": "VBA | Java\nI would like to take my programmning skills to the next level",
+    "image": "/static/images/team/embi.png"
+  },
+  {
+    "name": "Denis",
+    "artistName": "Ardi",
+    "titles": "Student",
+    "bio": "I like to learn everything that has to do with computers and programming.\nWould also like to have a self-build robot.",
+    "image": "/static/images/team/ardi.jpg"
+  },
+  {
+    "name": "Tixi",
+    "artistName": "Tixi",
+    "titles": "Robot | A. I.",
+    "bio": "I want to be the best robot in the world.\nWould like to support and help where I can.",
+    "image": "/static/images/team/tixi.jpg"
+  }
+]
