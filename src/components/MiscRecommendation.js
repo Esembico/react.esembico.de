@@ -1,4 +1,5 @@
 import React from "react";
+import Description from "./Description";
 import ExternalInternalLink from "./ExternalInternalLink";
 
 export default function MiscRecommendation({ recommendation }) {
@@ -16,9 +17,7 @@ export default function MiscRecommendation({ recommendation }) {
         />
       </ExternalInternalLink>
       <h5>{recommendation.title}</h5>
-      {recommendation.description.split("\n").map((line, index) => {
-        return <p key={index}>{line}</p>;
-      })}
+      <Description>{recommendation.description}</Description>
     </div>
   );
 }

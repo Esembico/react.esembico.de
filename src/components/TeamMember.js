@@ -1,4 +1,5 @@
 import React from "react";
+import Description from "./Description";
 
 export default function TeamMember({ teamMember }) {
   return (
@@ -24,9 +25,7 @@ export default function TeamMember({ teamMember }) {
       <div className="main">
         <h3>{teamMember.name}</h3>
         <h5>{teamMember.titles}</h5>
-        {teamMember.bio.split("\n").map((line, index) => {
-          return <p key={index}>{line}</p>;
-        })}
+        <Description>{teamMember.bio}</Description>
       </div>
     </div>
   );
