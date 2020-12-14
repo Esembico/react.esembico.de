@@ -11,6 +11,7 @@ import Coding from "./pages/Coding";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import Prototype1 from "./pages/Prototype1";
 import Prototypes from "./pages/Prototypes";
 import Recommendations from "./pages/Recommendations";
 import Robotics from "./pages/Robotics";
@@ -64,6 +65,9 @@ export default function App() {
         </Route>
         <Route exact={true} path="/coding">
           <Coding />
+        </Route>
+        <Route exact={true} path="/prototypes/proto1">
+          <Prototype1 />
         </Route>
         <Route exact={true} path="/prototypes">
           <Prototypes />

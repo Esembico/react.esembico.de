@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Prototypes() {
   useEffect(() => {
@@ -20,9 +21,9 @@ export default function Prototypes() {
           <div className="container proto">
             <div className="card">
               <div className="imgBx">
-                <a href="proto1.html">
+                <Link to="/prototypes/proto1">
                   <img src="/static/images/proto/proto1a.PNG" alt="proto1" />
-                </a>
+                </Link>
               </div>
               <div className="contentBx">
                 <div className="content">
@@ -62,7 +63,11 @@ export default function Prototypes() {
           <div className="container proto">
             <div className="card">
               <div className="imgBx">
-                <a href="https://tixi-chatbot.herokuapp.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://tixi-chatbot.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src="/static/images/proto/proto2.jpg" alt="proto2" />
                 </a>
               </div>
