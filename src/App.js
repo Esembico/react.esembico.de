@@ -9,6 +9,7 @@ import {
 import MenuToggle from "./components/MenuToggle";
 import Coding from "./pages/Coding";
 import Contact from "./pages/Contact";
+import DataScienceVsBusinessAnalyst from "./pages/DataScienceVsBusinessAnalyst";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Prototype1 from "./pages/Prototype1";
@@ -74,6 +75,9 @@ export default function App() {
         </Route>
         <Route exact={true} path="/contact">
           <Contact />
+        </Route>
+        <Route exact={true} path="/recommendations/dbvsba">
+          <DataScienceVsBusinessAnalyst />
         </Route>
         <Route exact={true} path="/recommendations">
           <Recommendations />
