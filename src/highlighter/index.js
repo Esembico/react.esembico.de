@@ -1,5 +1,3 @@
-const languages = {};
-
 function tokenize(
   code,
   { specialCharacters, stringCharacters, commentCharacter }
