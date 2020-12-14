@@ -49,7 +49,7 @@
   },
   {
     "type": "misc",
-    "url": "/recommendations/recDsvsBA",
+    "url": "/recommendations/dbvsba",
     "internalUrl": true,
     "image": {
       "url": "/static/images/rec/DSvsBA.jpg",
