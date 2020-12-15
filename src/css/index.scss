@@ -55,6 +55,10 @@ body {
     --main-color: #ffffff;
   }
 }
+
+::selection {
+  background-color: var(--secondary-bg-color);
+}
 p {
   font-size: 15px;
 
