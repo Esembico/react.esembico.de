@@ -95,10 +95,18 @@ export default function Prototype1() {
     <React.Fragment>
       <div className="row">
         <div className="image">
-          <img className="responsive-image" src="/static/images/proto/1.webp" alt="proto_1" />
+          <img
+            className="responsive-image"
+            src="/static/images/proto/1.webp"
+            alt="proto_1"
+          />
         </div>
         <div className="image">
-          <img className="responsive-image" src="/static/images/proto/2.jpg" alt="proto_2" />
+          <img
+            className="responsive-image"
+            src="/static/images/proto/2.jpg"
+            alt="proto_2"
+          />
         </div>
       </div>
 
@@ -108,11 +116,13 @@ export default function Prototype1() {
           <ul>
             <li>Create the folder on your drive c:</li>
             <img
+              className="responsive-image"
               src="/static/images/proto/protos/proto1_1.PNG"
               alt="proto1_1"
             />
             <li>Insert the import files to your input folder</li>
             <img
+              className="responsive-image"
               src="/static/images/proto/protos/proto1_2.PNG"
               alt="proto1_2"
             />
@@ -121,14 +131,18 @@ export default function Prototype1() {
               (you can copy and paste the listed procedure below)
             </li>
             <img
+              className="responsive-image"
               src="/static/images/proto/protos/proto1_3.PNG"
               alt="proto1_3"
             />
             <li>Create a button and assign to the name of the procedure</li>
-            <img src="/static/images/proto/protos/proto1_4.PNG" alt="proto14" />
+            <img
+              className="responsive-image"
+              src="/static/images/proto/protos/proto1_4.PNG"
+              alt="proto14"
+            />
             <li>Test it</li>
           </ul>
-          {/* prettier-ignore */}
           <CodeHighligher language={vba}>
           {code}
           </CodeHighligher>
