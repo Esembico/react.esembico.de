@@ -111,7 +111,7 @@ export default function Prototype1() {
       </div>
 
       <div className="row">
-        <div className="main-main" style={{ "background-color": "#000000" }}>
+        <div className="main-main" style={{ "backgroundColor": "#000000" }}>
           <h4>1. Open files from folder and copy the needed data</h4>
           <ul>
             <li>Create the folder on your drive c:</li>
