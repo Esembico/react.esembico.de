@@ -57,38 +57,40 @@ export default function App() {
         </nav>
         <div className="clearfix"></div>
       </header>
-      <Switch>
-        <Route exact={true} path="/team">
-          <Team />
-        </Route>
-        <Route exact={true} path="/robotics">
-          <Robotics />
-        </Route>
-        <Route exact={true} path="/coding">
-          <Coding />
-        </Route>
-        <Route exact={true} path="/prototypes/proto1">
-          <Prototype1 />
-        </Route>
-        <Route exact={true} path="/prototypes">
-          <Prototypes />
-        </Route>
-        <Route exact={true} path="/contact">
-          <Contact />
-        </Route>
-        <Route exact={true} path="/recommendations/dbvsba">
-          <DataScienceVsBusinessAnalyst />
-        </Route>
-        <Route exact={true} path="/recommendations">
-          <Recommendations />
-        </Route>
-        <Route exact={true} path="/">
-          <Home />
-        </Route>
-        <Route path="*">
-          <NotFound />
-        </Route>
-      </Switch>
+      <div className="main-content">
+        <Switch>
+          <Route exact={true} path="/team">
+            <Team />
+          </Route>
+          <Route exact={true} path="/robotics">
+            <Robotics />
+          </Route>
+          <Route exact={true} path="/coding">
+            <Coding />
+          </Route>
+          <Route exact={true} path="/prototypes/proto1">
+            <Prototype1 />
+          </Route>
+          <Route exact={true} path="/prototypes">
+            <Prototypes />
+          </Route>
+          <Route exact={true} path="/contact">
+            <Contact />
+          </Route>
+          <Route exact={true} path="/recommendations/dbvsba">
+            <DataScienceVsBusinessAnalyst />
+          </Route>
+          <Route exact={true} path="/recommendations">
+            <Recommendations />
+          </Route>
+          <Route exact={true} path="/">
+            <Home />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+      </div>
 
       <footer>
         <h5>

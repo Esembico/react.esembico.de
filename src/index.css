@@ -72,10 +72,11 @@ li {
   font-size: 15px;
 }
 header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   padding: 10px;
+  z-index: 999;
   box-sizing: border-box;
-  border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-variant: small-caps;
   background-color: var(--main-bg-color);
@@ -84,6 +85,9 @@ header #google_translate_element {
   position: relative;
   padding: 3px;
   font-variant: normal;
+}
+.main-content {
+  margin-top: 80px;
 }
 .goog-te-gadget {
   font-family: Roboto;
@@ -165,9 +169,6 @@ nav ul li a:hover {
     0 0 200px var(--secondary-bg-color);
 }
 @media (max-width: 1200px) {
-  header {
-    margin: 3px;
-  }
   body {
     margin: 3px;
   }
