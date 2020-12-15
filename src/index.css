@@ -225,6 +225,7 @@ nav ul li a:hover {
   padding: 10px;
   box-sizing: border-box;
   border-radius: 4px;
+  min-width: 0;
   background-color: var(--main-bg-color);
 }
 .grid-container {
@@ -513,6 +514,7 @@ input[type="submit"] {
 pre {
   tab-size: 4;
   counter-reset: line;
+  overflow-x: auto;
 }
 
 code.line {
