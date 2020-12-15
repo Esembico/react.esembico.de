@@ -10,14 +10,14 @@ export default function DataScienceVsBusinessAnalyst() {
         <div className="image">
           <img
             className="responsive-image"
-            src="../static/images/rec/1.webp"
+            src="/static/images/rec/1.webp"
             alt="rec_1"
           />
         </div>
         <div className="image">
           <img
             className="responsive-image"
-            src="../static/images/rec/2.jpg"
+            src="/static/images/rec/2.jpg"
             alt="rec_2"
           />
         </div>
