@@ -93,17 +93,17 @@ export default function Prototype1() {
   }, []);
   return (
     <React.Fragment>
-      <div class="row">
-        <div class="image">
+      <div className="row">
+        <div className="image">
           <img className="responsive-image" src="/static/images/proto/1.webp" alt="proto_1" />
         </div>
-        <div class="image">
+        <div className="image">
           <img className="responsive-image" src="/static/images/proto/2.jpg" alt="proto_2" />
         </div>
       </div>
 
-      <div class="row">
-        <div class="main-main" style={{ "background-color": "#000000" }}>
+      <div className="row">
+        <div className="main-main" style={{ "background-color": "#000000" }}>
           <h4>1. Open files from folder and copy the needed data</h4>
           <ul>
             <li>Create the folder on your drive c:</li>
