@@ -9,10 +9,18 @@ export default function Prototypes() {
     <React.Fragment>
       <div className="row">
         <div className="image">
-          <img src="/static/images/proto/1.webp" alt="proto_1" />
+          <img
+            className="responsive-image"
+            src="/static/images/proto/1.webp"
+            alt="proto_1"
+          />
         </div>
         <div className="image">
-          <img src="/static/images/proto/2.jpg" alt="proto_2" />
+          <img
+            className="responsive-image"
+            src="/static/images/proto/2.jpg"
+            alt="proto_2"
+          />
         </div>
       </div>
 

@@ -8,10 +8,18 @@ export default function Coding() {
     <React.Fragment>
       <div class="row">
         <div class="image">
-          <img src="/static/images/coding/1.jpg" alt="coding_1" />
+          <img
+            className="responsive-image"
+            src="/static/images/coding/1.jpg"
+            alt="coding_1"
+          />
         </div>
         <div class="image">
-          <img src="/static/images/coding/2.webp" alt="coding_2" />
+          <img
+            className="responsive-image"
+            src="/static/images/coding/2.webp"
+            alt="coding_2"
+          />
         </div>
       </div>
 

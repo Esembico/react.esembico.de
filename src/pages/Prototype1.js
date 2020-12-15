@@ -95,10 +95,10 @@ export default function Prototype1() {
     <React.Fragment>
       <div class="row">
         <div class="image">
-          <img src="/static/images/proto/1.webp" alt="proto_1" />
+          <img className="responsive-image" src="/static/images/proto/1.webp" alt="proto_1" />
         </div>
         <div class="image">
-          <img src="/static/images/proto/2.jpg" alt="proto_2" />
+          <img className="responsive-image" src="/static/images/proto/2.jpg" alt="proto_2" />
         </div>
       </div>
 

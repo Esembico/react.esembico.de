@@ -16,10 +16,10 @@ export default function Recommendations() {
     <React.Fragment>
       <div className="row">
         <div className="image">
-          <img className="rec" src="/static/images/rec/1.webp" alt="rec_1" />
+          <img className="responsive-image" src="/static/images/rec/1.webp" alt="rec_1" />
         </div>
         <div className="image">
-          <img className="rec" src="/static/images/rec/2.jpg" alt="rec_2" />
+          <img className="responsive-image" src="/static/images/rec/2.jpg" alt="rec_2" />
         </div>
       </div>
 

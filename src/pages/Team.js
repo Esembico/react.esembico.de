@@ -15,10 +15,18 @@ export default function Team() {
     <React.Fragment>
       <div className="row">
         <div className="image">
-          <img src="/static/images/team/1.webp" alt="team_1" />
+          <img
+            className="responsive-image"
+            src="/static/images/team/1.webp"
+            alt="team_1"
+          />
         </div>
         <div className="image">
-          <img src="/static/images/team/2.jpg" alt="team_2" />
+          <img
+            className="responsive-image"
+            src="/static/images/team/2.jpg"
+            alt="team_2"
+          />
         </div>
       </div>
 

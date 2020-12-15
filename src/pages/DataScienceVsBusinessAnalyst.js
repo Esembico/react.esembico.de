@@ -9,12 +9,14 @@ export default function DataScienceVsBusinessAnalyst() {
       <div className="row">
         <div className="image">
           <img
+            className="responsive-image"
             src="../static/images/rec/1.webp"
             alt="rec_1"
           />
         </div>
         <div className="image">
           <img
+            className="responsive-image"
             src="../static/images/rec/2.jpg"
             alt="rec_2"
           />

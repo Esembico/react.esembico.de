@@ -9,12 +9,14 @@ export default function Robotics() {
       <div className="row">
         <div className="image">
           <img
+            className="responsive-image"
             src="/static/images/robotics/1.jpg"
             alt="robotics_1"
           />
         </div>
         <div className="image">
           <img
+            className="responsive-image"
             src="/static/images/robotics/2.webp"
             alt="robotics_2"
           />

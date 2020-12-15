@@ -8,10 +8,18 @@ export default function Home() {
     <React.Fragment>
       <div className="row">
         <div className="image imgBx">
-          <img src="static/images/home/1.webp" alt="home_1" />
+          <img
+            className="responsive-image"
+            src="static/images/home/1.webp"
+            alt="home_1"
+          />
         </div>
         <div className="image">
-          <img src="static/images/home/2.jpg" alt="home_2" />
+          <img
+            className="responsive-image"
+            src="static/images/home/2.jpg"
+            alt="home_2"
+          />
         </div>
       </div>
 
