@@ -16,18 +16,25 @@ export default function Recommendations() {
     <React.Fragment>
       <div className="row">
         <div className="image">
-          <img className="responsive-image" src="/static/images/rec/1.webp" alt="rec_1" />
+          <img
+            className="responsive-image"
+            src="/static/images/rec/1.webp"
+            alt="rec_1"
+          />
         </div>
         <div className="image">
-          <img className="responsive-image" src="/static/images/rec/2.jpg" alt="rec_2" />
+          <img
+            className="responsive-image"
+            src="/static/images/rec/2.jpg"
+            alt="rec_2"
+          />
         </div>
       </div>
 
       <div className="row">
-        <div className="grid-container">
-          <div className="grid-item-header">Misc</div>
-          <div className="grid-item-header">Movies</div>
-          <div>
+        <div className="grid-container flex-container">
+          <div className="flex-item-70">
+            <div className="grid-item-header">Misc</div>
             {recommendations
               .filter((rec) => rec.type === "misc")
               .map((recommendation, index) => {
@@ -39,7 +46,8 @@ export default function Recommendations() {
                 );
               })}
           </div>
-          <div>
+          <div className="flex-item-30">
+            <div className="grid-item-header">Movies</div>
             {recommendations
               .filter((rec) => rec.type === "movie")
               .map((recommendation, index) => {

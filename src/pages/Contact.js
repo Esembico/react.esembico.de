@@ -17,7 +17,7 @@ export default function Contact() {
 
       <div className="row">
         <div className="main-main contact">
-          <div className="container contact">
+          <div className="container-contact">
             <h2>Contact Us</h2>
             <div className="row100">
               <div className="col">

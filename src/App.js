@@ -57,7 +57,7 @@ export default function App() {
         </nav>
         <div className="clearfix"></div>
       </header>
-      <div className="main-content">
+      <div className="container">
         <Switch>
           <Route exact={true} path="/team">
             <Team />
