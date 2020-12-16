@@ -4,6 +4,10 @@ import "./css/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+if (!localStorage.getItem("max-cache-age")) {
+  localStorage.setItem("max-cache-age", "1200000")
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
