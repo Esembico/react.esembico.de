@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="image imgBx">
+        <div className="image image-box">
           <img
             className="responsive-image"
             src="static/images/home/1.webp"

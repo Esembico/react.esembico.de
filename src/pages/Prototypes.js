@@ -28,12 +28,12 @@ export default function Prototypes() {
         <div className="main-main">
           <div className="container proto">
             <div className="card">
-              <div className="imgBx">
+              <div className="image-box">
                 <Link to="/prototypes/proto1">
                   <img src="/static/images/proto/proto1a.PNG" alt="proto1" />
                 </Link>
               </div>
-              <div className="contentBx">
+              <div className="content-box">
                 <div className="content">
                   <h3>Proto 1</h3>
                   <h4>VBA Tool</h4>
@@ -70,7 +70,7 @@ export default function Prototypes() {
         <div className="main-main">
           <div className="container proto">
             <div className="card">
-              <div className="imgBx">
+              <div className="image-box">
                 <a
                   href="https://tixi-chatbot.herokuapp.com/"
                   target="_blank"
@@ -79,7 +79,7 @@ export default function Prototypes() {
                   <img src="/static/images/proto/proto2.jpg" alt="proto2" />
                 </a>
               </div>
-              <div className="contentBx">
+              <div className="content-box">
                 <div className="content">
                   <h3>Proto 2</h3>
                   <h4>Chatbot (Python)</h4>
