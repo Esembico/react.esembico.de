@@ -50,7 +50,6 @@
   {
     "type": "misc",
     "url": "/recommendations/dbvsba",
-    "internalUrl": true,
     "image": {
       "url": "/static/images/rec/DSvsBA.jpg",
       "width": 220,
