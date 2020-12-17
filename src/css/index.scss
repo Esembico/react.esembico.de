@@ -537,6 +537,23 @@ code.line {
   color: green;
 }
 
+.float {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+}
+
+.float:hover {
+  cursor: pointer;
+  background-color: var(--secondary-bg-color);
+}
+
 @media (max-width: 768px) {
   .flex-container {
     flex-direction: column;
