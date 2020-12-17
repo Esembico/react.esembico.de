@@ -8,14 +8,14 @@ export default function Prototypes() {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/proto/1.webp"
             alt="proto_1"
           />
         </div>
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/proto/2.jpg"

@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="image image-box">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="static/images/home/1.webp"
             alt="home_1"
           />
         </div>
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="static/images/home/2.jpg"

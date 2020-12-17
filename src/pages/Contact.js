@@ -7,10 +7,10 @@ export default function Contact() {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="image">
+        <div className="image flex-item-50">
           <img className="responsive-image" src="/static/images/contact/1.webp" alt="contact_1" />
         </div>
-        <div className="image">
+        <div className="image flex-item-50">
           <img className="responsive-image" src="/static/images/contact/2.webp" alt="contact_2" />
         </div>
       </div>

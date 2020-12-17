@@ -7,14 +7,14 @@ export default function Robotics() {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/robotics/1.jpg"
             alt="robotics_1"
           />
         </div>
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/robotics/2.webp"

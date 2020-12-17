@@ -7,14 +7,14 @@ export default function DataScienceVsBusinessAnalyst() {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/rec/1.webp"
             alt="rec_1"
           />
         </div>
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/rec/2.jpg"

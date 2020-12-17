@@ -7,14 +7,14 @@ export default function Coding() {
   return (
     <React.Fragment>
       <div class="row">
-        <div class="image">
+        <div class="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/coding/1.jpg"
             alt="coding_1"
           />
         </div>
-        <div class="image">
+        <div class="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/coding/2.webp"

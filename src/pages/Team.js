@@ -14,14 +14,14 @@ export default function Team() {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/team/1.webp"
             alt="team_1"
           />
         </div>
-        <div className="image">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/team/2.jpg"
