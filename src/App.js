@@ -3,10 +3,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink,
   Link,
 } from "react-router-dom";
-import MenuToggle from "./components/MenuToggle";
+import MainMenu from "./components/MainMenu";
+
 import Coding from "./pages/Coding";
 import Contact from "./pages/Contact";
 import DataScienceVsBusinessAnalyst from "./pages/DataScienceVsBusinessAnalyst";
@@ -21,42 +21,7 @@ import Team from "./pages/Team";
 export default function App() {
   return (
     <Router>
-      <header>
-        <div>
-          <Link className="logo" to="/">
-            ESEMBICO
-          </Link>
-        </div>
-        <MenuToggle target="main-menu" />
-        <nav id="main-menu">
-          <ul>
-            <li>
-              <NavLink exact={true} to="/">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/team">Team</NavLink>
-            </li>
-            <li>
-              <NavLink to="/robotics">Robotics</NavLink>
-            </li>
-            <li>
-              <NavLink to="/coding">Coding</NavLink>
-            </li>
-            <li>
-              <NavLink to="/prototypes">Proto</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-            <li>
-              <NavLink to="/recommendations">Rec</NavLink>
-            </li>
-          </ul>
-        </nav>
-        <div className="clearfix"></div>
-      </header>
+      <MainMenu />
       <div className="container">
         <Switch>
           <Route exact={true} path="/team">

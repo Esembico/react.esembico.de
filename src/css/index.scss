@@ -592,8 +592,9 @@ code.line {
   }
   nav {
     display: none;
-
-    &.active {
+  }
+  header.active {
+    nav {
       display: block;
       width: 100%;
 
