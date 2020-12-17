@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import TeamMember from "../components/TeamMember";
-import { load } from "../helpers/api";
 
 export default function Team() {
   const [teamMembers, setTeamMembers] = useState([]);
   useEffect(() => {
     document.querySelector("body").className = "team";
-    load("/data/team.json").then((json) => {
-      setTeamMembers(json);
-    });
+    fetch("/data/team.json")
+      .then((res) => res.json())
+      .then((json) => {
+        setTeamMembers(json);
+      });
   }, []);
   return (
     <React.Fragment>

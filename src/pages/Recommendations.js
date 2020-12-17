@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import MiscRecommendation from "../components/MiscRecommendation";
 import MovieRecommendation from "../components/MovieRecommendation";
-import { load } from "../helpers/api";
 
 export default function Recommendations() {
   const [recommendations, setRecommendations] = useState([]);
   useEffect(() => {
     document.querySelector("body").className = "rec";
-    load("/data/recommendations.json").then((json) => {
-      setRecommendations(json);
-    });
+    fetch("/data/recommendations.json")
+      .then((res) => res.json())
+      .then((json) => {
+        setRecommendations(json);
+      });
   }, []);
   return (
     <React.Fragment>
