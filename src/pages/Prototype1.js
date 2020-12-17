@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import CodeHighligher from "../components/CodeHighligher";
-import vba from "../highlighter/languages/vba";
 
 const code = `Option Explicit
 Sub CopyDataFromFiles()
@@ -143,7 +142,7 @@ export default function Prototype1() {
             />
             <li>Test it</li>
           </ul>
-          <CodeHighligher language={vba}>
+          <CodeHighligher language="vba">
           {code}
           </CodeHighligher>
         </div>
