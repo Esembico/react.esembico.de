@@ -5,6 +5,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import GenericPage from "./components/GenericPage";
 import MainMenu from "./components/MainMenu";
 
 import Coding from "./pages/Coding";
@@ -12,7 +13,6 @@ import Contact from "./pages/Contact";
 import DataScienceVsBusinessAnalyst from "./pages/DataScienceVsBusinessAnalyst";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import Prototype1 from "./pages/Prototype1";
 import Prototypes from "./pages/Prototypes";
 import Recommendations from "./pages/Recommendations";
 import Robotics from "./pages/Robotics";
@@ -33,11 +33,11 @@ export default function App() {
           <Route exact={true} path="/coding">
             <Coding />
           </Route>
-          <Route exact={true} path="/prototypes/proto1">
-            <Prototype1 />
-          </Route>
           <Route exact={true} path="/prototypes">
             <Prototypes />
+          </Route>
+          <Route path="/prototypes/:name">
+            <GenericPage theme="proto" />
           </Route>
           <Route exact={true} path="/contact">
             <Contact />

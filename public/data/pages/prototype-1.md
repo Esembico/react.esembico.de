@@ -1,7 +1,18 @@
-import React, { useEffect } from "react";
-import CodeHighligher from "../components/CodeHighligher";
+##### 1. Open files from folder and copy the needed data
 
-const code = `Option Explicit
+* Create the folder on your drive c:  
+![proto1_1](http://react.esembico.de/static/images/proto/protos/proto1_1.PNG)
+* Insert the import files to your input folder  
+![proto1_2](http://react.esembico.de/static/images/proto/protos/proto1_2.PNG)
+* Create the main vba file with the sub procedure  
+ (you can copy and paste the listed procedure below)  
+![proto1_3](http://react.esembico.de/static/images/proto/protos/proto1_3.PNG)
+* Create a button and assign to the name of the procedure  
+![proto1_4](http://react.esembico.de/static/images/proto/protos/proto1_4.PNG)
+* Test it
+
+```vba
+Option Explicit
 Sub CopyDataFromFiles()
 
 Dim FSO As Object
@@ -17,7 +28,7 @@ On Error GoTo Failure
 'Initialize File System Object
 Set FSO = CreateObject("Scripting.FileSystemObject")
 'Get the input folder
-Set Folder = FSO.GetFolder("C:\\01_input_files")
+Set Folder = FSO.GetFolder("C:\01_input_files")
 
 'Check and message the user if folder is empty and without files
 If Folder.Files.Count = 0 Then
@@ -84,69 +95,5 @@ Public Function GetLastRow(sheet As Worksheet, Optional column As Integer = 1) A
     
     GetLastRow = sheet.Cells(Rows.Count, column).End(xlUp).row
     
-End Function`;
-
-export default function Prototype1() {
-  useEffect(() => {
-    document.querySelector("body").className = "proto";
-  }, []);
-  return (
-    <React.Fragment>
-      <div className="row">
-        <div className="image flex-item-50">
-          <img
-            className="responsive-image"
-            src="/static/images/proto/1.webp"
-            alt="proto_1"
-          />
-        </div>
-        <div className="image flex-item-50">
-          <img
-            className="responsive-image"
-            src="/static/images/proto/2.jpg"
-            alt="proto_2"
-          />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="main-main" style={{ "backgroundColor": "#000000" }}>
-          <h4>1. Open files from folder and copy the needed data</h4>
-          <ul>
-            <li>Create the folder on your drive c:</li>
-            <img
-              className="responsive-image"
-              src="/static/images/proto/protos/proto1_1.PNG"
-              alt="proto1_1"
-            />
-            <li>Insert the import files to your input folder</li>
-            <img
-              className="responsive-image"
-              src="/static/images/proto/protos/proto1_2.PNG"
-              alt="proto1_2"
-            />
-            <li>
-              Create the main vba file with the sub procedure <br />
-              (you can copy and paste the listed procedure below)
-            </li>
-            <img
-              className="responsive-image"
-              src="/static/images/proto/protos/proto1_3.PNG"
-              alt="proto1_3"
-            />
-            <li>Create a button and assign to the name of the procedure</li>
-            <img
-              className="responsive-image"
-              src="/static/images/proto/protos/proto1_4.PNG"
-              alt="proto14"
-            />
-            <li>Test it</li>
-          </ul>
-          <CodeHighligher language="vba">
-          {code}
-          </CodeHighligher>
-        </div>
-      </div>
-    </React.Fragment>
-  );
-}
+End Function
+```

@@ -29,7 +29,7 @@ export default function Prototypes() {
           <div className="container proto">
             <div className="card">
               <div className="image-box">
-                <Link to="/prototypes/proto1">
+                <Link to="/prototypes/prototype-1">
                   <img src="/static/images/proto/proto1a.PNG" alt="proto1" />
                 </Link>
               </div>
