@@ -5,10 +5,11 @@ export default function Team() {
   const [teamMembers, setTeamMembers] = useState([]);
   useEffect(() => {
     document.querySelector("body").className = "team";
-    fetch("/data/team.json")
+    fetch("http://api.esembico.de/members/?format=json")
       .then((res) => res.json())
       .then((json) => {
-        setTeamMembers(json);
+        console.log(json);
+        setTeamMembers(json.results);
       });
   }, []);
   return (
@@ -32,7 +33,7 @@ export default function Team() {
 
       {teamMembers.map((teamMember) => {
         return (
-          <TeamMember key={teamMember.artistName} teamMember={teamMember} />
+          <TeamMember key={teamMember.artist_name} teamMember={teamMember} />
         );
       })}
     </React.Fragment>

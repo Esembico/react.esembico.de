@@ -9,7 +9,7 @@ export default function TeamMember({ teamMember }) {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <img
-                src={teamMember.image}
+                src={teamMember.image.url}
                 width="150px"
                 height="150px"
                 alt={teamMember.artistName}
@@ -17,7 +17,7 @@ export default function TeamMember({ teamMember }) {
             </div>
             <div className="flip-card-back">
               <h3>Artist name</h3>
-              <h1>{teamMember.artistName}</h1>
+              <h1>{teamMember.artist_name}</h1>
             </div>
           </div>
         </div>
