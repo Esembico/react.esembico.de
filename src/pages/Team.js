@@ -8,7 +8,6 @@ export default function Team() {
     fetch("http://api.esembico.de/members/?format=json")
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
         setTeamMembers(json.results);
       });
   }, []);
