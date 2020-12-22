@@ -98,7 +98,6 @@ function tokenize(
 }
 
 export function highlight(code, language) {
-
   const { tokens, keywords } = language(code, tokenize);
 
   let newCode = "";
@@ -127,7 +126,7 @@ export function highlight(code, language) {
     .trim()
     .split("\n")
     .map(function (line) {
-      return `<code class="line">${line}</code>`;
+      return `<code class="line">${line.trimEnd()}</code>`;
     })
     .join("\n");
   //codeBlock.innerHTML = newCode;
