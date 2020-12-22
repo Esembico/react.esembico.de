@@ -13,8 +13,8 @@ export default function MiscRecommendation({ recommendation }) {
         />
       </ExternalInternalLink>
       <h5>{recommendation.title}</h5>
-      <p>FSK: {recommendation.ageRating}</p>
-      <p>{recommendation.releaseYear}</p>
+      <p>FSK: {recommendation.field1}</p>
+      <p>{recommendation.field2}</p>
     </div>
   );
 }

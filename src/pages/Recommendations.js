@@ -6,10 +6,10 @@ export default function Recommendations() {
   const [recommendations, setRecommendations] = useState([]);
   useEffect(() => {
     document.querySelector("body").className = "rec";
-    fetch("/data/recommendations.json")
+    fetch("http://api.esembico.de/recommendations/?format=json")
       .then((res) => res.json())
       .then((json) => {
-        setRecommendations(json);
+        setRecommendations(json.results);
       });
   }, []);
   return (
