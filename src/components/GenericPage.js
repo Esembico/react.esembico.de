@@ -9,7 +9,7 @@ const renderers = {
   },
   image: (params) => {
     // eslint-disable-next-line jsx-a11y/alt-text
-    return <img className="responsive-image" {...params}></img>
+    return <img className="responsive-image" {...params}></img>;
   },
 };
 
@@ -19,15 +19,10 @@ export default function GenericPage({ theme }) {
 
   useEffect(() => {
     document.querySelector("body").className = theme || "home";
-    fetch(`/data/pages/${name}.md`)
-      .then((res) => res.text())
-      .then((text) => {
-        // FIXME: Find a better way to determine if a markdown file was loaded.
-        if (text.startsWith("#")) {
-          setPageContent(text);
-        } else {
-          setPageContent("");
-        }
+    fetch(`http://api.esembico.de/pages/${name}/?format=json`)
+      .then((res) => res.json())
+      .then((json) => {
+        setPageContent(json.content);
       });
   }, [theme, name]);
   return (
