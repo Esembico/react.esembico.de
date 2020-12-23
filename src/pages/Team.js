@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from "react";
+import Loadable from "../components/Loadable";
 import TeamMember from "../components/TeamMember";
+import load from "../helpers/load";
 
 export default function Team() {
   const [teamMembers, setTeamMembers] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const loadImpl = () => {
+    load(
+      "http://api.esembico.de/members/?format=json",
+      setLoading,
+      (json) => {
+        setTeamMembers(json.results);
+      },
+      setError
+    );
+  };
   useEffect(() => {
     document.querySelector("body").className = "team";
-    fetch("http://api.esembico.de/members/?format=json")
-      .then((res) => res.json())
-      .then((json) => {
-        setTeamMembers(json.results);
-      });
+    loadImpl();
   }, []);
   return (
     <React.Fragment>
@@ -29,12 +39,18 @@ export default function Team() {
           />
         </div>
       </div>
-
-      {teamMembers.map((teamMember) => {
-        return (
-          <TeamMember key={teamMember.artist_name} teamMember={teamMember} />
-        );
-      })}
+      <Loadable
+        entityName="Team"
+        reloadCallback={loadImpl}
+        loading={loading}
+        error={error}
+      >
+        {teamMembers.map((teamMember) => {
+          return (
+            <TeamMember key={teamMember.artist_name} teamMember={teamMember} />
+          );
+        })}
+      </Loadable>
     </React.Fragment>
   );
 }
