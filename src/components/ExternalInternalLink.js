@@ -7,7 +7,7 @@ export default function ExternalInternalLink({ url, children }) {
   return (
     <React.Fragment>
       {internal && (
-        <Link exact={true} to={url}>
+        <Link to={url}>
           {children}
         </Link>
       )}
