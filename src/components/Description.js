@@ -4,7 +4,7 @@ export default function Description({ children, useBr }) {
   return (
     <React.Fragment>
       {useBr && (
-        <p
+        <span
           dangerouslySetInnerHTML={{
             __html: children.split("\r\n").join("<br>"),
           }}
