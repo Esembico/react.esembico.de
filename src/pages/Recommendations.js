@@ -1,26 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import MiscRecommendation from "../components/MiscRecommendation";
 import MovieRecommendation from "../components/MovieRecommendation";
-import load from "../helpers/load";
 import Loadable from "../components/Loadable";
+import useApi from "../hooks/useApi";
 
 export default function Recommendations() {
-  const [recommendations, setRecommendations] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const loadImpl = () => {
-    load(
-      "http://api.esembico.de/recommendations/?format=json",
-      setLoading,
-      (json) => {
-        setRecommendations(json.results);
-      },
-      setError
-    );
-  };
+  const { status, data: recommendations = [], error } = useApi(
+    "http://api.esembico.de/recommendations/?format=json",
+    "results"
+  );
   useEffect(() => {
     document.querySelector("body").className = "rec";
-    loadImpl();
   }, []);
   return (
     <React.Fragment>
@@ -42,8 +32,7 @@ export default function Recommendations() {
       </div>
       <Loadable
         entityName="Recommendations"
-        reloadCallback={loadImpl}
-        loading={loading}
+        loading={status === "loading"}
         error={error}
       >
         <div className="row">

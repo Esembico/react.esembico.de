@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import CodeHighligher from "./CodeHighligher";
-import load from "../helpers/load";
 import Loadable from "../components/Loadable";
+import useApi from "../hooks/useApi";
 
 const renderers = {
   code: ({ language, value }) => {
@@ -17,23 +17,14 @@ const renderers = {
 
 export default function GenericPage({ theme }) {
   const { name } = useParams();
-  const [pageContent, setPageContent] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const loadImpl = useCallback(() => {
-    load(
-      `http://api.esembico.de/pages/${name}/?format=json`,
-      setLoading,
-      (json) => {
-        setPageContent(json.content);
-      },
-      setError
-    );
-  }, [name]);
+  const { status, data: pageContent = "", error } = useApi(
+    `http://api.esembico.de/pages/${name}/?format=json`,
+    "content"
+  );
+
   useEffect(() => {
     document.querySelector("body").className = theme || "home";
-    loadImpl();
-  }, [loadImpl, theme]);
+  }, [theme]);
   return (
     <React.Fragment>
       <div className="row">
@@ -53,12 +44,7 @@ export default function GenericPage({ theme }) {
         </div>
       </div>
 
-      <Loadable
-        entityName={name}
-        reloadCallback={loadImpl}
-        loading={loading}
-        error={error}
-      >
+      <Loadable entityName={name} loading={status === "loading"} error={error}>
         <div className="row">
           <div className="main-main" style={{ backgroundColor: "#000000" }}>
             <ReactMarkdown renderers={renderers}>{pageContent}</ReactMarkdown>

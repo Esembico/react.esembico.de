@@ -8,17 +8,6 @@ export default function LoadingError({ reloadCallback, entityName }) {
         style={{ margin: "auto", textAlign: "center" }}
       >
         <p>Failed to load {entityName}</p>
-        <p>
-          <a
-            href="#reload"
-            onClick={(e) => {
-              e.preventDefault();
-              reloadCallback();
-            }}
-          >
-            Reload?
-          </a>
-        </p>
       </div>
     </div>
   );

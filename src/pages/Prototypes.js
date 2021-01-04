@@ -1,25 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Prototype from "../components/Prototype";
-import load from "../helpers/load";
 import Loadable from "../components/Loadable";
+import useApi from "../hooks/useApi";
 
 export default function Prototypes() {
-  const [prototypes, setPrototypes] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const loadImpl = () => {
-    load(
-      "http://api.esembico.de/prototypes/?format=json",
-      setLoading,
-      (json) => {
-        setPrototypes(json.results);
-      },
-      setError
-    );
-  };
+  const { status, data: prototypes = [], error } = useApi(
+    "http://api.esembico.de/prototypes/?format=json",
+    "results"
+  );
   useEffect(() => {
     document.querySelector("body").className = "proto";
-    loadImpl();
   }, []);
   return (
     <React.Fragment>
@@ -41,8 +31,7 @@ export default function Prototypes() {
       </div>
       <Loadable
         entityName="Prototypes"
-        reloadCallback={loadImpl}
-        loading={loading}
+        loading={status === "loading"}
         error={error}
       >
         {prototypes.map((prototype) => {
