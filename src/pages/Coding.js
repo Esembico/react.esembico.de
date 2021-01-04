@@ -6,15 +6,15 @@ export default function Coding() {
   }, []);
   return (
     <React.Fragment>
-      <div class="row">
-        <div class="image flex-item-50">
+      <div className="row">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/coding/1.jpg"
             alt="coding_1"
           />
         </div>
-        <div class="image flex-item-50">
+        <div className="image flex-item-50">
           <img
             className="responsive-image"
             src="/static/images/coding/2.webp"
@@ -23,11 +23,11 @@ export default function Coding() {
         </div>
       </div>
 
-      <div class="row">
-        <div class="grid-container flex-container">
+      <div className="row">
+        <div className="grid-container flex-container">
           <div className="flex-item-80">
-            <div class="grid-item-header">Beginner</div>
-            <div class="grid-item">
+            <div className="grid-item-header">Beginner</div>
+            <div className="grid-item">
               <a href="https://www.amazon.de/Spiele-mit-Python%C2%AE-supereasy-programmieren/dp/3831036756/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=python+easy&qid=1602710998&sr=8-4">
                 <img
                   src="/static/images/coding/SpieleMitPython.png"
@@ -45,7 +45,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/click-on-fruit#main.py"
                   target="_blank"
                   rel="noreferrer"
@@ -55,7 +55,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/collect-coins#main.py"
                   target="_blank"
                   rel="noreferrer"
@@ -65,7 +65,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/connect-numbers"
                   target="_blank"
                   rel="noreferrer"
@@ -75,7 +75,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/click-on-red-star#main.py"
                   target="_blank"
                   rel="noreferrer"
@@ -85,7 +85,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/quiz#main.py"
                   target="_blank"
                   rel="noreferrer"
@@ -95,7 +95,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/ballooning"
                   target="_blank"
                   rel="noreferrer"
@@ -105,7 +105,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/remember-dance-moves"
                   target="_blank"
                   rel="noreferrer"
@@ -115,7 +115,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/watering-flowers"
                   target="_blank"
                   rel="noreferrer"
@@ -125,7 +125,7 @@ export default function Coding() {
               </p>
               <p>
                 <a
-                  class="link"
+                  className="link"
                   href="https://repl.it/@sbuck/sleeping-dragon"
                   target="_blank"
                   rel="noreferrer"
@@ -137,7 +137,7 @@ export default function Coding() {
             </div>
           </div>
           <div className="flex-item-20">
-            <div class="grid-item-header">Advanced</div>
+            <div className="grid-item-header">Advanced</div>
           </div>
         </div>
       </div>
