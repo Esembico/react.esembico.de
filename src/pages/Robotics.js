@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import useApi from "../hooks/useApi";
 
 export default function Robotics() {
   useEffect(() => {
