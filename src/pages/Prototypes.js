@@ -5,7 +5,7 @@ import useApi from "../hooks/useApi";
 
 export default function Prototypes() {
   const { status, data: prototypes = [], error } = useApi(
-    "http://api.esembico.de/prototypes/",
+    "https://api.esembico.de/prototypes/",
     "results"
   );
   useEffect(() => {

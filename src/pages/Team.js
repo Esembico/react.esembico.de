@@ -5,7 +5,7 @@ import useApi from "../hooks/useApi";
 
 export default function Team() {
   const { status, data: teamMembers = [], error } = useApi(
-    "http://api.esembico.de/members/",
+    "https://api.esembico.de/members/",
     "results"
   );
   useEffect(() => {
