@@ -6,7 +6,7 @@ import useApi from "../hooks/useApi";
 
 export default function Recommendations() {
   const { status, data: recommendations = [], error } = useApi(
-    "http://api.esembico.de/recommendations/",
+    "https://api.esembico.de/recommendations/",
     "results"
   );
   useEffect(() => {
