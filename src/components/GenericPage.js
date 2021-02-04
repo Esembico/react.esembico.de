@@ -18,7 +18,7 @@ const renderers = {
 export default function GenericPage({ theme }) {
   const { name } = useParams();
   const { status, data: pageContent = "", error } = useApi(
-    `http://api.esembico.de/pages/slug/${name}/`,
+    `https://api.esembico.de/pages/slug/${name}/`,
     "content"
   );
 
